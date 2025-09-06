@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Assiment1</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav id="nav">
+      <img src="../Assest/logo.PNG" alt="" />
+
+      <div class="search">
+        <input type="text" placeholder="Search" id="searchInput" />
+        <button id="searchBtn">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+
+      <a href="#" class="menu" id="menu-toggle">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </a>
+      <button id="opencart" style="font-size: 24px;">
+        <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+        <span class="countcart" id="countcart"></span>
+      </button>
+                  <!--Dark light mood-->
+            <button class="darklight" id="darklight" ><i class="fa fa-certificate" aria-hidden="true"></i>
+</button>
+    </nav>
+
+    <div class="cart" id="cart">
+      <h3>Your Products:</h3>
+
+      <div class="products-scroll-container">
+        <div id="productsincartcontainer"></div>
+      </div>
+      <div>
+        <p>Total: <span id="total"></span></p>
+        <button class="paynowbtn">PAY From Here!</button>
+        
+      </div>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper mySwiper" id="swiper">
+      <div class="swiper-wrapper">
+        <div
+          class="swiper-slide"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.2)
+              ),
+              url('Assest/hero.png');
+          "
+        ></div>
+        <div
+          class="swiper-slide"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.2)
+              ),
+              url('Assest/hero2.png');
+          "
+        ></div>
+        <div
+          class="swiper-slide"
+          style="
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.2)
+              ),
+              url('Assest/hero3.png');
+          "
+        ></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!--Hero Section-->
+    <section class="herosection">
+      <div class="hero-overlay">
+        <h1>Discover Our New Arrivals</h1>
+        <p>Shop with elegance and confidence at HX Store</p>
+        <a href="#productsnow" class="hero-btn">Shop Now</a>
+      </div>
+    </section>
+
+    <!--Special Offers-->
+    <a href="" class="theoffersh3" id="theoffers"
+      ><h3>
+        Summer Offers
+        <i
+          class="fa fa-long-arrow-right"
+          aria-hidden="true"
+          style="margin-left: 10px"
+        ></i></h3
+    ></a>
+    <section class="theoffers" id="theoffers2">
+      <div class="offer">
+        <img src="Assest/offer1.PNG" alt="" />
+        <p>Discount until 30% on Laptop's</p>
+      </div>
+      <div class="offer">
+        <img src="Assest/offer2.PNG" alt="" />
+        <p>Discount until 70% on office's</p>
+      </div>
+      <div class="offer">
+        <img src="Assest/offer3.PNG" alt="" />
+        <p>Discount until 70% on Bags and Stationery</p>
+      </div>
+    </section>
+
+    <!--Products Section-->
+    <section id="productsnow">
+      <h3 class="theoffersh3">Products</h3>
+      <div class="productorderby">
+        <button onclick="ReadProducts()">All</button>
+        <button onclick="filterproduct(this.id)" id="laptop">Laptops</button>
+        <button onclick="filterproduct(this.id)" id="elctronic">
+          Elctronic
+        </button>
+        <button onclick="filterproduct(this.id)" id="clothes">Clothes</button>
+        <button onclick="filterproduct(this.id)" id="bags">Bags</button>
+      </div>
+
+      <div class="products" id="productscontainer"></div>
+    </section>
+
+    <hr />
+    <section class="contact-us" id="contact">
+      <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p id="pcontact">
+          If you have any questions, feedback, or need support — feel free to
+          reach out!
+        </p>
+
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>HX Store</h4>
+          <p>
+            Shop with elegance and confidence. Discover our latest offers and
+            products.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#offers">Offers</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 HX Store. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!--Modal-->
+    <div class="checkout-modal" id="checkoutModal">
+      <div class="checkout-content">
+        <span class="close-modal">X</span>
+        <h4>Checkout Summary</h4>
+        <div class="payment-method">
+          <label for="payment">Payment Method:</label>
+          <select id="payment">
+            <option value="credit">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="cash">Cash on Delivery</option>
+          </select>
+        </div>
+        <div class="final-total">
+          <span>Total:</span>
+          <strong id="totalmodal"></strong>
+        </div>
+        <button class="confirm-btn">Confirm Purchase</button>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop:true,
+        autoplay:{
+          delay:2000,
+          disableOnInteraction:false,
+        },
+        spaceBetween: 30,
+        effect: "fade",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
