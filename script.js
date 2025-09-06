@@ -61,7 +61,7 @@ const allproducts = [{
   title: 'Asus Tuf Gaming',
   details : 'ASUS TUF Gaming , intel core i7 11th gen, Ram 16gb, GTX 1650TI 4GB',
   price: 800,
-  img: '../Assest/offer1.PNG'
+  img: 'Assest/offer1.PNG'
 },
 {
   id:2,
@@ -69,7 +69,7 @@ const allproducts = [{
   title: 'Samsung QLED 65 4K',
   details : 'Samsung QLED TV 65-Inch, Q70D, 4K, 100% Color Volume with Quantum Dot, AI 4K Upscaling, Samsung TV Plus, Motion Xcelerator 120Hz',
   price: 900,
-  img: '../Assest/pr2.PNG'
+  img: 'Assest/pr2.PNG'
 },
 {
   id:3,
@@ -77,7 +77,7 @@ const allproducts = [{
   title: 'Samsung QLED 75 4K',
   details : 'Samsung QLED TV 75-Inch, Q70D, 4K, 100% Color Volume with Quantum Dot, AI 4K Upscaling, Samsung TV Plus, Motion Xcelerator 120Hz',
   price: 1100,
-  img: '../Assest/pr3.PNG'
+  img: 'Assest/pr3.PNG'
 },
 {
   id:4,
@@ -85,7 +85,7 @@ const allproducts = [{
   title: 'Lenovo Legion 5 Core i7 14700HX RTX 5070',
   details : 'Lenovo Legion 5 Core i7 14700HX, Ram 16gb, Nvidia Geforce RTX 5070, Storage 1TB SSD',
   price: 1500,
-  img: '../Assest/pr4.PNG'
+  img: 'Assest/pr4.PNG'
 },
 {
   id:5,
@@ -93,7 +93,7 @@ const allproducts = [{
   title: 'Lenovo Legion 7 Core i9 14700HX RTX 5070',
   details : 'Lenovo Legion 7 Core i9 14700HX, Ram 32gb, Nvidia Geforce RTX 5070 8GB GDDR7, Storage 1TB SSD',
   price: 1850,
-  img: '../Assest/pr5.PNG'
+  img: 'Assest/pr5.PNG'
 },
 {
   id:6,
@@ -101,7 +101,7 @@ const allproducts = [{
   title: 'Marshall Major V Bluetooth Headphones',
   details : 'Marshall Major V Bluetooth Headphones – Wireless, Foldable Over-Ear Headphones with Over 100 Hours of Playtime (Black)',
   price: 80,
-  img: '../Assest/pr6.PNG'
+  img: 'Assest/pr6.PNG'
 },
 {
   id:7,
@@ -109,7 +109,7 @@ const allproducts = [{
   title: 'Razer Mechanical Keyboard 75%',
   details : 'Razer Mechanical Keyboard 75% , exchanged style ,blue switch , RGB',
   price: 80,
-  img: '../Assest/pr7.PNG'
+  img: 'Assest/pr7.PNG'
 },
 {
   id:8,
@@ -117,7 +117,7 @@ const allproducts = [{
   title: 't-shirt men',
   details : 't-shirt men cotton',
   price: 10,
-  img: '../Assest/pr8.PNG'
+  img: 'Assest/pr8.PNG'
 },
 {
   id:9,
@@ -125,7 +125,7 @@ const allproducts = [{
   title: 't-shirt men oversize',
   details : 't-shirt men cotton oversize',
   price: 10,
-  img: '../Assest/pr9.PNG'
+  img: 'Assest/pr9.PNG'
 },
 {
   id:10,
@@ -133,7 +133,7 @@ const allproducts = [{
   title: 't-shirt women oversize',
   details : 't-shirt women cotton oversize',
   price: 15,
-  img: '../Assest/pr10.PNG'
+  img: 'Assest/pr10.PNG'
 },
 
 ];
